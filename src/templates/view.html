@@ -1,0 +1,49 @@
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/parea" >
+   <div class="card" style="width:60%;margin-left:30%;margin-top:6%">
+              <div class="card-header"class="btn btn-block btn-primary">
+                <h3 class="card-title" >View Parking Area</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th style="width: 16px">Area Id</th>
+                      <th>Area Name</th>
+                      <th>Place</th>
+                      <th>Description</th>
+                      <th></th>
+                      <th style="width: 40px"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for i in val %}
+    <tr>
+      <td>{{i[0]}}</td>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}&nbsp;</td>
+      <td>&nbsp;{{i[3]}}</td>
+      <td><a href="#">Track</a></td>
+      <td><p><a href="delparea?id={{i[0]}}">Delete</a></p>
+      <p><a href="uparea?id={{i[0]}}">Edit</a></p></td>
+    </tr>
+{% endfor %}
+    <tr>
+      <td colspan="6"><a href="#"></a>        <p>
+        <label></label>
+      </p>
+        <p align="center">
+            <button type="submit" class="btn btn-block btn-primary"  style=" width:25%;" >ADD</button>
+        </p></td>
+    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+				<div align="center">
+</form>
+{% endblock %}

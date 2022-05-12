@@ -1,0 +1,48 @@
+               {% extends 'indexadmin.html' %}
+             {% block body %}
+               <div class="col-md-6"style=" width:40%;margin-left:30%;">
+
+<div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title" >Update Area</h3>
+              </div>
+
+                 <form id="form1" name="form1" method="post" action="upareacode">
+                      <div class="card-body">
+                  <div class="form-group">
+                    <label>NAME</label>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="NAME" name="textfield" value="{{val[1]}}" required></div>
+                    </div>
+                    <label>PLACE</label>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="PLACE"  name="textfield2" value="{{val[2]}}" required>
+                    </div>
+					 <label>DESCRIPTION</label>
+                    <div class="mb-3">
+                     <textarea name="textarea" class="form-control" required>{{val[3]}}</textarea>
+                    </div>
+					 <label>LATITUDE</label>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="LATITUDE" name="textfield3"value="{{val[4]}}" pattern=pattern="^-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6}"" required>
+                    </div>
+					<label>LONGITUDE</label>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="LONGITUDE" name="textfield4" value="{{val[5]}}"pattern="^-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6}" required>
+                    </div>
+				
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-block btn-primary"style=" width:40%;margin-left:30%;">Update</button>
+                    </div>
+                  </div>
+                  </form>
+            </div>
+
+
+
+               </div>
+
+
+
+
+{% endblock %}
