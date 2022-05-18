@@ -1,0 +1,104 @@
+{% extends 'indexadmin.html' %}
+{% block body %}
+<div class="card card-primary"style=" width:40%;margin-left:30%;">
+              <div class="card-header">
+                <h3 class="card-title">Update Parking Area Manager</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+             <form id="form1" name="form1" method="post" action="upmanagercode" enctype="multipart/form-data" >
+                <div class="card-body">
+                  <div class="form-group"> <label >Name</label>
+                   <div class="input-group mb-3">
+
+          <input type="text" class="form-control" placeholder="Full name" name="name"value="{{val[1]}}">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+                  </div>
+                    <div class="form-group">
+                    <label >Address</label>
+                    <input type="textarea" class="form-control" placeholder="Enter Parking area name" name="address" value="{{val[2]}}" required>
+                  </div>
+                  <div class="form-group">
+
+                    <div class="col-sm-6">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label >Gender</label>
+                        <select class="form-control" name="gender" value="{{val[3]}}">
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Others</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="form-group">
+                  <label>DOB</label>
+
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                    </div>
+                    <input type="date" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" inputmode="numeric" name="dob" id="dob"value="{{val[4]}}"min="1990-01-01" max="2019-12-31" required>
+                  </div>
+                        <div class="form-group">
+                      <label >Mail</label>
+                        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email" name="mail" value="{{val[5]}}">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+                        </div>
+
+                  <!-- /.input group -->
+
+                    <div class="form-group">
+                    <label >Phone</label>
+                    <input type="textarea" class="form-control" placeholder="Enter Your Phone Number" name="phone" value="{{val[6]}}" required pattern="[6789][0-9]{9}">
+                    </div></div>
+                    <div class="col-sm-6">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label >Allocated area</label>
+                        <select class="form-control" name="area">
+
+                            {% for i in data %}
+                          <option value="{{i[0]}}">{{i[1]}}</option>
+                            {% endfor %}
+
+                        </select>
+                      </div>
+                    </div>
+
+
+
+
+<div class="form-group">
+                    <label >Photo </label><br>
+
+    <input type="file" name="photo" value="{{data[7]}}">
+
+
+                    </div>
+
+ </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary" style="margin-left:40%">Update</button>
+                </div>
+              </form>
+            </div>
+  </div>
+
+
+
+{% endblock %}

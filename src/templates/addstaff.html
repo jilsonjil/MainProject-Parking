@@ -1,0 +1,91 @@
+{% extends 'indexmanager.html' %}
+{% block body %}
+<div class="card card-primary"style=" width:40%;margin-left:30%;">
+              <div class="card-header">
+                <h3 class="card-title">Add Parking Manager</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+             <form id="form1" name="form1" method="post" action="staffaddcode" enctype="multipart/form-data" >
+                <div class="card-body">
+                  <div class="form-group">
+                   <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Full name" name="name">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+                  </div>
+                    <div class="form-group">
+                    <label >Address</label>
+                    <input type="textarea" class="form-control" placeholder="Enter Parking area name" name="address" required>
+                  </div>
+                  <div class="form-group">
+
+                    <div class="col-sm-6">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label >Gender</label>
+                        <select class="form-control" name="gender">
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Others</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="form-group">
+                  <label>DOB</label>
+
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                    </div>
+                    <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" inputmode="numeric" name="dob">
+                  </div>
+                        <div class="form-group">
+                      <label >Mail</label>
+                        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email" name="mail">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+                        </div>
+
+                  <!-- /.input group -->
+
+                    <div class="form-group">
+                    <label >Phone</label>
+                    <input type="textarea" class="form-control" placeholder="Enter Parking area name" name="phone" required>
+                    </div></div>
+
+
+
+<div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile" name="photo">
+                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+              </form>
+            </div>
+  </div>
+
+
+
+{% endblock %}

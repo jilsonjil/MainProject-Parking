@@ -1,0 +1,61 @@
+{% extends 'indexmanager.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/pstaff" >
+   <div class="card" style="margin-left:20%;margin-top:6%;margin-right:13%">
+              <div class="card-header"class="btn btn-block btn-primary">
+                <h3 class="card-title" >View Staff</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th style="width: 16px">Manager id</th>
+                      <th>Manager Name</th>
+                      <th>Address</th>
+                      <th>Gender</th>
+                        <th>D.O.B</th>
+                      <th>Email</th>
+                      <th>Phone Number</th>
+
+                        <th>Photo</th>
+                      <th ></th>
+
+                      <th></th>
+                      <th style="width: 40px"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for i in val %}
+    <tr>
+        <td>{{i[0]}}</td>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+      <td>{{i[3]}}&nbsp;</td>
+      <td>&nbsp;{{i[4]}}</td>
+        <td>{{i[5]}}&nbsp;</td>
+        <td>{{i[6]}}&nbsp;</td>
+        <td></td>
+        <td><img src="../static/{{i[7]}}" style="width:100%;height:1000%"></td>
+
+      <td><p><a href="delstaff?id={{i[0]}}">Delete</a></p>
+      <p><a href="upstaff?id={{i[0]}}">Edit</a></p></td>
+    </tr>
+{% endfor %}
+    <tr>
+      <td colspan="9"><a href="#"></a>        <p>
+        <label></label>
+      </p>
+        <p align="center">
+            <button type="submit" class="btn btn-block btn-primary"  style=" width:25%;" >ADD</button>
+        </p></td>
+    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+				<div align="center">
+</form>
+{% endblock %}

@@ -1,4 +1,4 @@
-                <!DOCTYPE html>
+ <!DOCTYPE html>
       <html>
         <head>
           <title>Campus Map</title>
@@ -14,6 +14,7 @@
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=places&sensor=false"></script>-->
 
 <script>
 $(document).ready(function () {
@@ -21,7 +22,7 @@ var map,
     faisalabad = {lat:11.265369806331075, lng:75.8357048034668};
     var  map1;
 var marker = false;
-function addYourLocationButton (map, marker)
+function addYourLocationButton (map, marker) 
 {
     var controlDiv = document.createElement('div');
 
@@ -135,44 +136,41 @@ function markerLocation(){
           <div id="map"></div>
           <h2><center>Chosen Location-Kozhikode</center></h2>
         <div class="col-md-6"style=" width:40%;margin-left:30%;">
-
 <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title" >Update Area</h3>
+                <h3 class="card-title" >Add Area</h3>
               </div>
-
-                 <form id="form1" name="form1" method="post" action="upareacode">
-                      <div class="card-body">
-                  <div class="form-group">
-                    <label>NAME</label>
+              <form id="form1" name="form1" method="post" action="areaadd" >
+                  <div class="card-body">
+                       <div class="form-group">
+               <label>NAME</label>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="NAME" name="textfield" value="{{val[1]}}" required></div>
+                        <input type="text" class="form-control" placeholder="Enter Parking area name" name="textfield" required></div>
                     </div>
                     <label>PLACE</label>
                     <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="PLACE"  name="textfield2" value="{{val[2]}}" required>
+                      <input type="text" class="form-control" placeholder="Enter City Name"  name="textfield2" required>
                     </div>
 					 <label>DESCRIPTION</label>
                     <div class="mb-3">
-                     <textarea name="textarea" class="form-control" required>{{val[3]}}</textarea>
+                     <textarea name="textarea"  class="form-control" required></textarea>
                     </div>
 					 <label>LATITUDE</label>
                     <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="LATITUDE" name="lat"value="{{val[4]}}" id="lat"  required>
+                      <input type="text" class="form-control" placeholder="Enter Latitude" name="lat" id="lat" required>
                     </div>
 					<label>LONGITUDE</label>
                     <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="LONGITUDE" name="lng" value="{{val[5]}}"id="lng" required>
+                      <input type="text" class="form-control" placeholder="Enter Latitude" name="lng" id="lng"  required>
                     </div>
-				
+
                     <div class="text-center">
-                      <button type="submit" class="btn btn-block btn-primary"style=" width:40%;margin-left:30%;">Update</button>
+                      <button type="submit" class="btn btn-block btn-primary"style= "width:40%;margin-left:30%">Save</button>
                     </div>
-                  </div>
                   </form>
             </div>
-               </div>
 
+  </div>
 
-
-
+        </body>
+      </html>

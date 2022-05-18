@@ -1,0 +1,115 @@
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+
+<style rel="stylesheet">
+
+.card{
+
+    background-color:#ffffef;
+	width: 450px;
+	border-radius: 20px;
+}
+
+
+.heading{
+
+   font-weight: 700;
+
+}
+
+
+.hour{
+    margin-top: 1px;
+	color: green;
+	font-size: 12px;
+}
+
+.ratings i{
+
+	color: #388E3C;
+}
+
+.btn{
+
+	border-radius: 15px !important;
+}
+
+
+.line-color{
+	color: #FBC02D
+;
+	height: 3px;
+}
+</style>
+ <div  style="margin-left:50%">
+                <h3 class="card-title">View Parking Manager</h3>
+              </div>
+
+   <div  style="margin-left:80%;margin-top:6%">
+
+
+            <a href="pmanager" class="btn btn-block btn-primary"  style=" width:25%;" >ADD</a>
+
+
+              </div>
+              <!-- /.card-body -->
+
+
+
+</p>
+{% for i in val %}
+
+<div class="container mt-5 d-flex justify-content-center" style="width:60%;">
+    <div class="card p-4 mt-3"  style="width:70%;">
+           <div class="first">
+            <h6 class="heading" >Area name : {{i[9]}}</h6>
+             <div class="time d-flex flex-row align-items-center justify-content-between mt-3">
+
+               <div class="d-flex align-items-center">
+                   <i class="fa fa-clock-o clock"></i>
+                   <span class="heading">ID : {{i[0]}}</span>
+               </div>
+
+               <div>
+                   <span class="font-weight-bold"> <a href="delpm?id={{i[0]}}">Delete</a> &nbsp;
+      <a href="upmanager?id={{i[0]}}">Edit</a></span>
+               </div>
+            </div>
+
+</div>
+<div class="second d-flex flex-row mt-2">
+                    <div class="image mr-3">
+                     <img src="../static/{{i[7]}}" style="border-radius:20px" width="90px"/>
+                    </div>
+
+                    <div class="">
+
+                        <div class="d-flex flex-row mb-1" style="margin-left:20px">
+
+                            <span class="heading">{{i[1]}}</span>
+
+                        </div><br>
+
+                        <div>
+
+                            <button style="margin-left:20px" class="btn btn-outline-dark btn-sm px-2">{{i[5]}}</button>
+                            <button class="btn btn-outline-dark btn-sm" style="margin-left:10px">{{i[6]}}</button>
+
+                        </div>
+
+                    </div>
+
+</div>
+<hr class="line-color">
+
+<h6>Address : {{i[2]}}</h6>
+
+</div>
+</div>
+
+{% endfor %}
+
+
+
+{% endblock %}
