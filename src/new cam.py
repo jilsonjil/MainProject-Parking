@@ -153,13 +153,6 @@ while(True):
 
 
 
-
-
-
-
-
-        # break
-
                 time.sleep(10)
      else:
          f=f+1
