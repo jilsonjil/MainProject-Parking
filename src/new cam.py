@@ -151,8 +151,6 @@ while(True):
 
 
 
-
-
                 time.sleep(10)
      else:
          f=f+1
