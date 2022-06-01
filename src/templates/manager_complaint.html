@@ -1,0 +1,47 @@
+{% extends 'indexmanager.html' %}
+{% block body %}
+
+
+<form id="form1" name="form1" method="post" action="/addslot" >
+   <div class="card" style="width:60%;margin-left:30%;margin-top:6%">
+              <div class="card-header"class="btn btn-block btn-primary">
+                <h2 align="center" >View Complaint</h2>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                  {% if f=="1" %}
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+
+                      <th>User Name</th>
+                      <th>Complaint</th>
+                      <th>Date</th>
+                        <th></th>
+</tr>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for i in val %}
+    <tr>
+
+
+      <td>{{i[6]}}&nbsp;</td>
+        <td>{{i[7]}}</td>
+       <td>{{i[4]}}</td>
+        <td><a href="/reply?id={{i[0]}}">Reply</a></td>
+
+    </tr>
+{% endfor %}
+
+                  </tbody>
+                </table>
+                  {% else %}
+                  <h2>No Pending Complaints </h2>
+                  {% endif %}
+              </div>
+              <!-- /.card-body -->
+            </div>
+				<div align="center">
+</form>
+{% endblock %}

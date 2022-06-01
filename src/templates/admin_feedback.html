@@ -1,0 +1,41 @@
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/latilongi" >
+   <div class="card" style="width:60%;margin-left:30%;margin-top:6%">
+              <div class="card-header"class="btn btn-block btn-primary">
+                <h2 align="center" >View Feedback</h2>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+
+                      <th>Area Name</th>
+                      <th>User Name</th>
+                      <th>feedback</th>
+                      <th>Date</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for i in val %}
+    <tr>
+      <td>{{i[5]}}</td>
+      <td>{{i[6]}}</td>
+      <td>{{i[3]}}&nbsp;</td>
+      <td>&nbsp;{{i[4]}}</td>
+
+
+    </tr>
+{% endfor %}
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+
+</form>
+{% endblock %}
