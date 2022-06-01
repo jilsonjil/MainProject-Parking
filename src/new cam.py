@@ -149,8 +149,6 @@ while(True):
                         val = (rr[0], amt)
                         iud(qry, val)
 
-
-
                 time.sleep(10)
      else:
          f=f+1
