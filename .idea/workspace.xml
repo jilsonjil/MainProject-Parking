@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0a0a67-50c1-40f3-91a2-762b0615355f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/new cam.py" afterPath="$PROJECT_DIR$/src/new cam.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/addmanager.html" afterPath="$PROJECT_DIR$/src/templates/addmanager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/viewreserve.html" afterPath="$PROJECT_DIR$/src/templates/viewreserve.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new cam.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new cam.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/new cam.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
@@ -57,8 +58,8 @@
       <file leaf-file-name="addmanager.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/addmanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1722">
-              <caret line="82" column="26" lean-forward="false" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+            <state relative-caret-position="63">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,13 +95,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewreserve.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="viewreserve.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/templates/viewreserve.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            <state relative-caret-position="227">
+              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding>
-                <marker date="1657187056000" expanded="true" signature="530:551" ph="..." />
+                <marker date="1657367592158" expanded="true" signature="530:551" ph="..." />
               </folding>
             </state>
           </provider>
@@ -199,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/templates/updatestaff.html" />
         <option value="$PROJECT_DIR$/src/templates/managerupdate.html" />
         <option value="$PROJECT_DIR$/src/templates/signin.html" />
-        <option value="$PROJECT_DIR$/src/templates/addmanager.html" />
         <option value="$PROJECT_DIR$/src/templates/view_pmanager.html" />
         <option value="$PROJECT_DIR$/src/templates/addslot.html" />
         <option value="$PROJECT_DIR$/src/templates/updateslot.html" />
@@ -210,15 +210,16 @@
         <option value="$PROJECT_DIR$/src/templates/indexmanager.html" />
         <option value="$PROJECT_DIR$/src/templates/indexstaff.html" />
         <option value="$PROJECT_DIR$/src/templates/viewparking.html" />
-        <option value="$PROJECT_DIR$/src/templates/viewreserve.html" />
         <option value="$PROJECT_DIR$/src/server.py" />
         <option value="$PROJECT_DIR$/src/login.py" />
         <option value="$PROJECT_DIR$/src/ocr_main.py" />
         <option value="$PROJECT_DIR$/src/new cam.py" />
+        <option value="$PROJECT_DIR$/src/templates/addmanager.html" />
+        <option value="$PROJECT_DIR$/src/templates/viewreserve.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-218" />
     <option name="y" value="39" />
     <option name="width" value="1281" />
@@ -473,7 +474,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.107948445" sideWeight="0.4891775" order="0" side_tool="false" content_ui="combo" />
@@ -793,16 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/viewreserve.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <marker date="1657187056000" expanded="true" signature="530:551" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -832,14 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/addmanager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1722">
-          <caret line="82" column="26" lean-forward="false" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/num.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -865,6 +848,24 @@
           <folding>
             <element signature="e#1#19#0" expanded="true" />
             <element signature="e#443#760#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/addmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/viewreserve.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <marker date="1657367592158" expanded="true" signature="530:551" ph="..." />
           </folding>
         </state>
       </provider>
