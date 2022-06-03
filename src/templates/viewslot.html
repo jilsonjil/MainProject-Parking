@@ -1,0 +1,49 @@
+{% extends 'indexmanager.html' %}
+{% block body %}
+
+
+<form id="form1" name="form1" method="post" action="/addslot" >
+   <div class="card" style="width:60%;margin-left:30%;margin-top:6%">
+              <div class="card-header"class="btn btn-block btn-primary">
+                <h2 align="center" >View Slot Details</h2>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th style="width: 16px">Slot id</th>
+                      <th>Floor number</th>
+                      <th>Slot number</th>
+                        <th>Status</th>
+                        <th style="width: 40px"></th>
+                    </tr>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for i in val %}
+    <tr>
+      <td>{{i[0]}}</td>
+      <td>{{i[3]}}</td>
+      <td>{{i[2]}}&nbsp;</td>
+       <td>{{i[4]}}</td>
+      <td><p><a href="delslot?id={{i[0]}}">Delete</a></p>
+      <p><a href="upslot?id={{i[0]}}">Edit</a></p></td>
+    </tr>
+{% endfor %}
+    <tr>
+      <td colspan="6"><a href="#"></a>        <p>
+        <label></label>
+      </p>
+        <p align="center">
+            <button type="submit" class="btn btn-block btn-primary"  style=" width:25%;" >ADD</button>
+        </p></td>
+    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+				<div align="center">
+</form>
+{% endblock %}

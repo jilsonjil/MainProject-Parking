@@ -2,15 +2,16 @@
 {% block body %}
 <div class="card card-primary"style=" width:40%;margin-left:30%;">
               <div class="card-header">
-                <h3 class="card-title">Add Parking Manager</h3>
+                <h3 class="card-title">Update Staff</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
              <form id="form1" name="form1" method="post" action="upstaffcode" enctype="multipart/form-data" >
                 <div class="card-body">
                   <div class="form-group">
+                       <label >Full name</label>
                    <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Full name" name="name"value="{{val[1]}}">
+          <input type="text" class="form-control"  name="name"value="{{val[1]}}">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -43,7 +44,8 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                     </div>
-                    <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" inputmode="numeric" name="dob"value="{{val[4]}}">
+                     <input type="date"    placeholder="Select Your DOB"  min="1940-04-01" max="2018-12-30" name="dob"
+                                                 required value="{{val[4]}}">
                   </div>
                         <div class="form-group">
                       <label >Mail</label>
@@ -61,24 +63,21 @@
 
                     <div class="form-group">
                     <label >Phone</label>
-                    <input type="textarea" class="form-control" placeholder="Enter Parking area name" name="phone" value="{{val[6]}}" required>
+                    <input type="textarea" class="form-control" pattern="[6789][0-9]{9}" name="phone" value="{{val[6]}}" required>
                     </div></div>
 
-<div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile" name="photo" value="{{val[7]}}">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                      </div>
-                    </div>
+ <div class="form-group">
+                    <label for="exampleInputFile">Photo </label>
 
+                        <input type="file" name="photo">
+
+
+                    </div>
 
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Add</button>
+                  <button type="submit" class="btn btn-primary" style="margin-left:40%">Update</button>
                 </div>
               </form>
             </div>

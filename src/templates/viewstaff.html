@@ -1,61 +1,173 @@
 {% extends 'indexmanager.html' %}
 {% block body %}
+<style rel="stylesheet">
 
-<form id="form1" name="form1" method="post" action="/pstaff" >
-   <div class="card" style="margin-left:20%;margin-top:6%;margin-right:13%">
-              <div class="card-header"class="btn btn-block btn-primary">
-                <h3 class="card-title" >View Staff</h3>
+
+.card{
+
+    background-color:;
+	width: 450px;
+	border-radius: 20px;
+}
+
+
+.heading{
+
+   font-weight: 700;
+
+}
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #407BFF;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	top: 100px;
+	right: 40px;
+	z-index: 999;
+}
+.floating-head {
+	border-radius: 26.5px;
+	background-color: #407BFF;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 22px 20px;
+	position: fixed;
+	top: 200px;
+	right: 40px;
+	z-index: 999;
+}
+.subheading{
+
+   font-weight: 550;
+   font-size: 12px;
+
+}
+
+.hour{
+    margin-top: 1px;
+	color: green;
+	font-size: 12px;
+}
+
+.ratings i{
+
+	color: #388E3C;
+}
+
+.btn{
+
+	border-radius: 15px !important;
+}
+
+
+.line-color{
+	color: #FBC02D
+;
+	height: 3px;
+}
+.seven h1 {
+text-align: center;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.seven h1:after,.seven h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c50000;
+    border-top: 1px solid #c50000;
+    height: 5px;
+  background-color:#f8f8f8;
+}
+
+</style>
+<div class="seven" style="margin-top:5%">
+  <h1 style="color:#407BFF">View Staff</h1>
+</div>
+   <div  style="margin-left:80%;margin-top:6%">
+
+
+            <a href="/pstaff" class="floating-btn "style="margin-top:5%" >ADD</a>
+
+
               </div>
-              <!-- /.card-header -->
-              <div class="card-body p-0">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th style="width: 16px">Manager id</th>
-                      <th>Manager Name</th>
-                      <th>Address</th>
-                      <th>Gender</th>
-                        <th>D.O.B</th>
-                      <th>Email</th>
-                      <th>Phone Number</th>
+{% for i in val %}
+<div class="container mt-5 d-flex justify-content-center" style="width:60%;">
+    <div class="card p-4 mt-3"  style="width:70%;">
+           <div class="first">
 
-                        <th>Photo</th>
-                      <th ></th>
+             <div class="time d-flex flex-row align-items-center justify-content-between mt-3">
 
-                      <th></th>
-                      <th style="width: 40px"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {% for i in val %}
-    <tr>
-        <td>{{i[0]}}</td>
-      <td>{{i[1]}}</td>
-      <td>{{i[2]}}</td>
-      <td>{{i[3]}}&nbsp;</td>
-      <td>&nbsp;{{i[4]}}</td>
-        <td>{{i[5]}}&nbsp;</td>
-        <td>{{i[6]}}&nbsp;</td>
-        <td></td>
-        <td><img src="../static/{{i[7]}}" style="width:100%;height:1000%"></td>
+               <div class="d-flex align-items-center">
+                   <i class="fa fa-clock-o clock"></i>
+                   <span class="heading">ID : {{i[0]}}</span>
+               </div>
 
-      <td><p><a href="delstaff?id={{i[0]}}">Delete</a></p>
-      <p><a href="upstaff?id={{i[0]}}">Edit</a></p></td>
-    </tr>
-{% endfor %}
-    <tr>
-      <td colspan="9"><a href="#"></a>        <p>
-        <label></label>
-      </p>
-        <p align="center">
-            <button type="submit" class="btn btn-block btn-primary"  style=" width:25%;" >ADD</button>
-        </p></td>
-    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
+               <div>
+                   <span class="font-weight-bold"> <a href="delstaff?id={{i[0]}}">Delete</a> &nbsp;
+      <a href="upstaff?id={{i[0]}}">Edit</a></span>
+               </div>
             </div>
-				<div align="center">
-</form>
-{% endblock %}
+
+</div>
+<div class="second d-flex flex-row mt-2">
+                    <div class="image mr-3">
+                     <img src="../static/{{i[7]}}" style="border-radius:20px" width="90px"/>
+                    </div>
+
+                    <div class="">
+
+                        <div class="d-flex flex-row mb-1" style="margin-left:20px">
+
+                            <span class="heading" style="">{{i[1]}}</span>
+
+
+                        </div>
+
+                        <div>
+<div class="d-flex flex-row mb-1" style="margin-left:20px">
+
+    <span class="subheading">DOB:{{i[4]}}</span></div>
+
+                        </div><br>
+
+
+                        <div>
+
+
+                            <button style="margin-left:20px" class="btn btn-outline-dark btn-sm px-2">{{i[5]}}</button>
+                            <button class="btn btn-outline-dark btn-sm" style="margin-left:10px">{{i[6]}}</button>
+
+                        </div>
+
+                    </div>
+
+</div>
+<hr class="line-color">
+
+<h6>Address : {{i[2]}}</h6>
+
+</div>
+</div>
+
+{% endfor %}
+
+
+
+{% endblock %} 

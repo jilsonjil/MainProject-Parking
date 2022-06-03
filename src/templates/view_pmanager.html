@@ -4,9 +4,10 @@
 
 <style rel="stylesheet">
 
+
 .card{
 
-    background-color:#ffffef;
+    background-color:;
 	width: 450px;
 	border-radius: 20px;
 }
@@ -17,7 +18,42 @@
    font-weight: 700;
 
 }
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #407BFF;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	top: 100px;
+	right: 40px;
+	z-index: 999;
+}
+.floating-head {
+	border-radius: 26.5px;
+	background-color: #407BFF;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 22px 20px;
+	position: fixed;
+	top: 200px;
+	right: 40px;
+	z-index: 999;
+}
+.subheading{
 
+   font-weight: 550;
+   font-size: 12px;
+
+}
 
 .hour{
     margin-top: 1px;
@@ -41,15 +77,35 @@
 ;
 	height: 3px;
 }
-</style>
- <div  style="margin-left:50%">
-                <h3 class="card-title">View Parking Manager</h3>
-              </div>
+.seven h1 {
+text-align: center;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
 
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.seven h1:after,.seven h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c50000;
+    border-top: 1px solid #c50000;
+    height: 5px;
+  background-color:#f8f8f8;
+}
+
+</style>
+<div class="seven" style="margin-top:5%">
+  <h1 style="color:#407BFF">View Parking Area Manager</h1>
+</div>
    <div  style="margin-left:80%;margin-top:6%">
 
 
-            <a href="pmanager" class="btn btn-block btn-primary"  style=" width:25%;" >ADD</a>
+            <a href="pmanager" class="floating-btn "style="margin-top:5%" >ADD</a>
 
 
               </div>
@@ -57,7 +113,6 @@
 
 
 
-</p>
 {% for i in val %}
 
 <div class="container mt-5 d-flex justify-content-center" style="width:60%;">
@@ -87,11 +142,21 @@
 
                         <div class="d-flex flex-row mb-1" style="margin-left:20px">
 
-                            <span class="heading">{{i[1]}}</span>
+                            <span class="heading" style="">{{i[1]}}</span>
+
+
+                        </div>
+
+                        <div>
+<div class="d-flex flex-row mb-1" style="margin-left:20px">
+
+    <span class="subheading">DOB:{{i[4]}}</span></div>
 
                         </div><br>
 
+
                         <div>
+
 
                             <button style="margin-left:20px" class="btn btn-outline-dark btn-sm px-2">{{i[5]}}</button>
                             <button class="btn btn-outline-dark btn-sm" style="margin-left:10px">{{i[6]}}</button>

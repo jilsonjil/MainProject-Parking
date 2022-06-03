@@ -2,15 +2,16 @@
 {% block body %}
 <div class="card card-primary"style=" width:40%;margin-left:30%;">
               <div class="card-header">
-                <h3 class="card-title">Add Parking Manager</h3>
+                <h3 class="card-title">Add Staff</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
              <form id="form1" name="form1" method="post" action="staffaddcode" enctype="multipart/form-data" >
                 <div class="card-body">
                   <div class="form-group">
+                       <label >Full name</label>
                    <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Full name" name="name">
+          <input type="text" class="form-control" placeholder="Full name" name="name" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -19,8 +20,8 @@
         </div>
                   </div>
                     <div class="form-group">
-                    <label >Address</label>
-                    <input type="textarea" class="form-control" placeholder="Enter Parking area name" name="address" required>
+                    <label > Address</label>
+                    <input type="textarea" class="form-control" placeholder="Enter Your Address" name="address" required>
                   </div>
                   <div class="form-group">
 
@@ -43,12 +44,12 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                     </div>
-                    <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" inputmode="numeric" name="dob">
-                  </div>
+                    <input type="date"  class="form-control"  placeholder="Select Your DOB"  min="1940-04-01" max="2018-12-30" name="dob"
+                                                 required> </div>
                         <div class="form-group">
                       <label >Mail</label>
                         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email" name="mail">
+          <input type="email" class="form-control" placeholder="Email" name="mail" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -61,30 +62,28 @@
 
                     <div class="form-group">
                     <label >Phone</label>
-                    <input type="textarea" class="form-control" placeholder="Enter Parking area name" name="phone" required>
+                    <input type="textarea" class="form-control" placeholder="Enter Your phone number" name="phone" required pattern="[6789][0-9]{9}">
                     </div></div>
 
 
 
 <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile" name="photo">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                      </div>
+                    <label for="exampleInputFile">Photo </label>
+
+                        <input type="file" name="photo" required>
+
+
                     </div>
                   </div>
 
                 <!-- /.card-body -->
 
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Add</button>
+                 <div class="card-footer">
+                  <button type="submit" class="btn btn-primary" style="margin-left:40%">Add</button>
                 </div>
               </form>
             </div>
-  </div>
+
 
 
 
