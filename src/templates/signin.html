@@ -52,14 +52,14 @@
                  <form id="form1" name="form1" method="post" action="logincode">
                     <label>Username</label>
                     <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="USERNAME" name="textfield" >
+                      <input type="text" class="form-control" placeholder="USERNAME" name="textfield" required>
                     </div>
                     <label>Password</label>
                     <div class="mb-3">
-                      <input type="password" class="form-control" placeholder="PASSWORD" aria-label="Password" aria-describedby="password-addon" name="textfield2">
+                      <input type="password" class="form-control" placeholder="PASSWORD" aria-label="Password" aria-describedby="password-addon" name="textfield2" required>
                     </div>
                     <div class="form-check form-switch">
-                      {% if a==-1 %}
+                      {% if a=='-1' %}
                       *USERNAME OR PASSWORD IS WRONG
                       {% endif %}
                     </div>

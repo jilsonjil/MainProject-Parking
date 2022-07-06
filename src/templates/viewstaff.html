@@ -109,7 +109,7 @@ text-align: center;
               </div>
 {% for i in val %}
 <div class="container mt-5 d-flex justify-content-center" style="width:60%;">
-    <div class="card p-4 mt-3"  style="width:70%;">
+    <div class="card p-4 mt-3" {% if i[8]=='Inactive' %} style="width:70%;background-color:#fce4ec"{% else %}style="width:70%"{% endif %}>
            <div class="first">
 
              <div class="time d-flex flex-row align-items-center justify-content-between mt-3">
@@ -143,7 +143,7 @@ text-align: center;
                         <div>
 <div class="d-flex flex-row mb-1" style="margin-left:20px">
 
-    <span class="subheading">DOB:{{i[4]}}</span></div>
+    <span class="subheading">DOB:{{i[9]}}</span></div>
 
                         </div><br>
 
@@ -161,7 +161,7 @@ text-align: center;
 </div>
 <hr class="line-color">
 
-<h6>Address : {{i[2]}}</h6>
+<h6>Address : {{i[3]}}</h6>
 
 </div>
 </div>

@@ -30,9 +30,9 @@
                       <div class="form-group">
                         <label >Gender</label>
                         <select class="form-control" name="gender" value="{{val[3]}}">
-                          <option>Male</option>
-                          <option>Female</option>
-                          <option>Others</option>
+                          <option value="Male" {% if val[3]=='Male'%} selected {% endif %}>Male</option>
+                          <option value="Female" {% if val[3]=='Female'%} selected {% endif %}>Female</option>
+                          <option value="Others" {% if val[3]=='Others'%} selected {% endif %}>Others</option>
                         </select>
                       </div>
                     </div>
@@ -72,7 +72,7 @@
                         <select class="form-control" name="area">
 
                             {% for i in data %}
-                          <option value="{{i[0]}}" {% if i[0]==val[1] %} selected {% endif %}>{{i[1]}}</option>
+                          <option value="{{i[0]}}" {% if i[0]==val[8] %} selected {% endif %}>{{i[1]}}</option>
                             {% endfor %}
 
                         </select>
@@ -89,7 +89,21 @@
 
   {{val[7]}}
                     </div>
-                  </div>
+                </div>
+                   <div class="form-group">
+
+                    <div class="col-sm-6">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label >Status</label>
+                        <select class="form-control" name="status" value="{{val[9]}}">
+                          <option value="Active" {% if val[9]=='Active'%} selected {% endif %} >Active</option>
+                          <option value="Inactive" {% if val[9]=='Inactive'%} selected {% endif %}>Inactive</option>
+
+                        </select>
+                      </div>
+                    </div>
+                   </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">

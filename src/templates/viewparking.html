@@ -1,0 +1,40 @@
+{% extends 'indexstaff.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" >
+   <div class="card" style="width:60%;margin-left:30%;margin-top:6%">
+              <div class="card-header"class="btn btn-block btn-primary">
+                <h2 align="center" >View Parking List</h2>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th style="width: 16px"> ID</th>
+                         <th>VEHICLE NUMBER</th>
+                      <th>ENTRY DATE AND TIME</th>
+                      <th>EXIT DATE AND TIME</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for i in val %}
+    <tr>
+      <td>{{i[0]}}</td>
+      <td>{{i[5]}}</td>
+      <td>&nbsp;{{i[7]}}</td>
+      <td>&nbsp;</td>
+    </tr>
+{% endfor %}
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+				<div align="center">
+</form>
+{% endblock %}

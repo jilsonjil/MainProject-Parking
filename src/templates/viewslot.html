@@ -12,9 +12,9 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th style="width: 16px">Slot id</th>
                       <th>Floor number</th>
                       <th>Slot number</th>
+                         <th>Type</th>
                         <th>Status</th>
                         <th style="width: 40px"></th>
                     </tr>
@@ -23,10 +23,11 @@
                   <tbody>
                     {% for i in val %}
     <tr>
-      <td>{{i[0]}}</td>
+
       <td>{{i[3]}}</td>
       <td>{{i[2]}}&nbsp;</td>
-       <td>{{i[4]}}</td>
+        <td>{{i[4]}}</td>
+       <td>{{i[5]}}</td>
       <td><p><a href="delslot?id={{i[0]}}">Delete</a></p>
       <p><a href="upslot?id={{i[0]}}">Edit</a></p></td>
     </tr>

@@ -21,7 +21,7 @@
                   </div>
                     <div class="form-group">
                     <label >Address</label>
-                    <input type="textarea" class="form-control" placeholder="Enter Parking area name" name="address" value="{{val[2]}}" required>
+                    <input type="textarea" class="form-control" placeholder="Enter Parking area name" name="address" value="{{val[3]}}" required>
                   </div>
                   <div class="form-group">
 
@@ -30,23 +30,24 @@
                       <div class="form-group">
                         <label >Gender</label>
                         <select class="form-control" name="gender" value="{{val[3]}}">
-                          <option>Male</option>
-                          <option>Female</option>
-                          <option>Others</option>
+                         <option value="Male" {% if val[3]=='Male'%} selected {% endif %}>Male</option>
+                          <option value="Female" {% if val[3]=='Female'%} selected {% endif %}>Female</option>
+                          <option value="Others" {% if val[3]=='Others'%} selected {% endif %}>Others</option>>
                         </select>
                       </div>
                     </div>
                   </div>
                     <div class="form-group">
+                  <div class="form-group">
                   <label>DOB</label>
 
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                     </div>
-                     <input type="date"    placeholder="Select Your DOB"  min="1940-04-01" max="2018-12-30" name="dob"
-                                                 required value="{{val[4]}}">
-                  </div>
+                       <input type="date"  class="form-control"  placeholder="Select Your DOB"  min="1940-04-01" max="2018-12-30" name="dob" value="{{val[4]}}" >
+
+                      </div>
                         <div class="form-group">
                       <label >Mail</label>
                         <div class="input-group mb-3">
@@ -70,11 +71,25 @@
                     <label for="exampleInputFile">Photo </label>
 
                         <input type="file" name="photo">
-
+                         {{val[7]}}
 
                     </div>
 
                 <!-- /.card-body -->
+                     <div class="form-group">
+
+                    <div class="col-sm-6">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label >Status</label>
+                        <select class="form-control" name="status" value="{{val[8]}}">
+                          <option value="Active" {% if val[8]=='Active'%} selected {% endif %} >Active</option>
+                          <option value="Inactive" {% if val[8]=='Inactive'%} selected {% endif %}>Inactive</option>
+
+                        </select>
+                      </div>
+                    </div>
+                  </div>
 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary" style="margin-left:40%">Update</button>

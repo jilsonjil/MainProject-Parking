@@ -2,37 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0a0a67-50c1-40f3-91a2-762b0615355f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/Jilson.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/addarea.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/addslot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/addstaff.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/adminlog_page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/assets/img/parking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/bill.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/booking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/branch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/complaint.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/kmct.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/view_slots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/addslot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/updateslot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/viewslot.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/num.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new cam.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ocr_main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/indexstaff.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/sdash.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/viewparking.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/viewreserve.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/webserver.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dbconnection.py" afterPath="$PROJECT_DIR$/src/dbconnection.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.py" afterPath="$PROJECT_DIR$/src/login.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server.py" afterPath="$PROJECT_DIR$/src/server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/addmanager.html" afterPath="$PROJECT_DIR$/src/templates/addmanager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/addstaff.html" afterPath="$PROJECT_DIR$/src/templates/addstaff.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/dash.html" afterPath="$PROJECT_DIR$/src/templates/dash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/indexadmin.html" afterPath="$PROJECT_DIR$/src/templates/indexadmin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/addslot.html" afterPath="$PROJECT_DIR$/src/templates/addslot.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/indexmanager.html" afterPath="$PROJECT_DIR$/src/templates/indexmanager.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/lati longi.html" afterPath="$PROJECT_DIR$/src/templates/lati longi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/managerupdate.html" afterPath="$PROJECT_DIR$/src/templates/managerupdate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/parkareaadd.html" afterPath="$PROJECT_DIR$/src/templates/parkareaadd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/parkareaupdate.html" afterPath="$PROJECT_DIR$/src/templates/parkareaupdate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/signin.html" afterPath="$PROJECT_DIR$/src/templates/signin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/updateslot.html" afterPath="$PROJECT_DIR$/src/templates/updateslot.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/updatestaff.html" afterPath="$PROJECT_DIR$/src/templates/updatestaff.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/view_pmanager.html" afterPath="$PROJECT_DIR$/src/templates/view_pmanager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/viewslot.html" afterPath="$PROJECT_DIR$/src/templates/viewslot.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/viewstaff.html" afterPath="$PROJECT_DIR$/src/templates/viewstaff.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,53 +34,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Parking_fee" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new cam.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/new cam.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1239">
+              <caret line="69" column="76" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="76" />
+              <folding>
+                <element signature="e#1#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewparking.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/viewparking.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="login.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2756">
-              <caret line="314" column="0" lean-forward="true" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexadmin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/indexadmin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="166" column="28" lean-forward="false" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexmanager.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/indexmanager.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2037">
-              <caret line="166" column="28" lean-forward="false" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_pmanager.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/view_pmanager.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="137" column="25" lean-forward="false" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="25" />
+            <state relative-caret-position="4557">
+              <caret line="220" column="30" lean-forward="false" selection-start-line="220" selection-start-column="30" selection-end-line="220" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -97,18 +86,58 @@
       <file leaf-file-name="addmanager.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/addmanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="92" column="24" lean-forward="true" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+            <state relative-caret-position="231">
+              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="managerupdate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/managerupdate.html">
+      <file leaf-file-name="parkareaadd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/parkareaadd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1554">
-              <caret line="89" column="12" lean-forward="true" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+            <state relative-caret-position="189">
+              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="882">
+              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewreserve.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/viewreserve.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewslot.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/viewslot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexstaff.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/indexstaff.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="143" column="30" lean-forward="false" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -126,36 +155,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>brow</find>
-      <find>addslotcode</find>
-      <find>uparea</find>
-      <find>updateslo</find>
-      <find>updateslot</find>
-      <find>session['aid']</find>
-      <find>areaadd</find>
-      <find>addarea</find>
-      <find>viewslot</find>
-      <find>addslo</find>
-      <find>adds</find>
-      <find>/admin_home</find>
-      <find>viewsl</find>
-      <find>insert into</find>
-      <find>viewslo</find>
-      <find>delst</find>
-      <find>addst</find>
-      <find>addman</find>
-      <find>mana</find>
-      <find>pmana</find>
-      <find>pman</find>
       <find>add</find>
-      <find>addstaff</find>
-      <find>img</find>
+      <find>slot</find>
+      <find>up</find>
+      <find>booking</find>
+      <find>print</find>
+      <find>if</find>
+      <find>ins</find>
+      <find>inser</find>
+      <find>manager</find>
+      <find>admin</find>
+      <find>index</find>
       <find>staff</find>
-      <find>lid</find>
-      <find>out</find>
-      <find>login</find>
-      <find>logout</find>
-      <find>/viewparea</find>
+      <find>latil</find>
+      <find>view</find>
+      <find>addslot</find>
+      <find>das</find>
+      <find>viewstaff</find>
+      <find>Select,1,2,3</find>
+      <find>logi</find>
+      <find>loginc</find>
+      <find>reser</find>
+      <find>ver</find>
+      <find>Da</find>
+      <find>sess</find>
+      <find>ai</find>
+      <find>date</find>
+      <find>rese</find>
+      <find>or</find>
+      <find>LOGINC</find>
+      <find>Add</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;../s/assets</replace>
@@ -166,6 +195,7 @@
       <replace>href=&quot;../static/asset/</replace>
       <replace>src=&quot;../static/asset/</replace>
       <replace>href=&quot;./static/</replace>
+      <replace>#print</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -181,37 +211,44 @@
         <option value="$PROJECT_DIR$/src/templates/login.html" />
         <option value="$PROJECT_DIR$/src/templates/addarea.html" />
         <option value="$PROJECT_DIR$/src/templates/dashboard.html" />
-        <option value="$PROJECT_DIR$/src/templates/signin.html" />
         <option value="$PROJECT_DIR$/src/templates/updatearea.html" />
         <option value="$PROJECT_DIR$/src/templates/index.html" />
         <option value="$PROJECT_DIR$/src/templates/add_pmanager.html" />
         <option value="$PROJECT_DIR$/src/templates/mdash.html" />
         <option value="$PROJECT_DIR$/src/templates/view.html" />
-        <option value="$PROJECT_DIR$/src/templates/parkareaupdate.html" />
-        <option value="$PROJECT_DIR$/src/templates/lati longi.html" />
         <option value="$PROJECT_DIR$/src/templates/parkareaadd.html" />
-        <option value="$PROJECT_DIR$/src/dbconnection.py" />
-        <option value="$PROJECT_DIR$/src/server.py" />
-        <option value="$PROJECT_DIR$/src/templates/addslot.html" />
-        <option value="$PROJECT_DIR$/src/templates/view_pmanager.html" />
-        <option value="$PROJECT_DIR$/src/templates/updateslot.html" />
         <option value="$PROJECT_DIR$/src/templates/addstaff.html" />
-        <option value="$PROJECT_DIR$/src/templates/viewslot.html" />
         <option value="$PROJECT_DIR$/src/templates/dash.html" />
-        <option value="$PROJECT_DIR$/src/templates/updatestaff.html" />
-        <option value="$PROJECT_DIR$/src/templates/viewstaff.html" />
-        <option value="$PROJECT_DIR$/src/templates/addmanager.html" />
-        <option value="$PROJECT_DIR$/src/templates/managerupdate.html" />
         <option value="$PROJECT_DIR$/src/templates/indexadmin.html" />
+        <option value="$PROJECT_DIR$/src/templates/lati longi.html" />
+        <option value="$PROJECT_DIR$/src/templates/parkareaupdate.html" />
+        <option value="$PROJECT_DIR$/src/templates/viewstaff.html" />
+        <option value="$PROJECT_DIR$/src/templates/updatestaff.html" />
+        <option value="$PROJECT_DIR$/src/templates/managerupdate.html" />
+        <option value="$PROJECT_DIR$/src/templates/signin.html" />
+        <option value="$PROJECT_DIR$/src/templates/addmanager.html" />
+        <option value="$PROJECT_DIR$/src/templates/view_pmanager.html" />
+        <option value="$PROJECT_DIR$/src/templates/addslot.html" />
+        <option value="$PROJECT_DIR$/src/templates/updateslot.html" />
+        <option value="$PROJECT_DIR$/src/templates/viewslot.html" />
+        <option value="$PROJECT_DIR$/src/dbconnection.py" />
+        <option value="$PROJECT_DIR$/src/ocr_main .py" />
+        <option value="$PROJECT_DIR$/src/ocr_main.py" />
+        <option value="$PROJECT_DIR$/src/new cam.py" />
+        <option value="$PROJECT_DIR$/src/templates/sdash.html" />
         <option value="$PROJECT_DIR$/src/templates/indexmanager.html" />
+        <option value="$PROJECT_DIR$/src/templates/indexstaff.html" />
+        <option value="$PROJECT_DIR$/src/templates/viewparking.html" />
+        <option value="$PROJECT_DIR$/src/templates/viewreserve.html" />
+        <option value="$PROJECT_DIR$/src/server.py" />
         <option value="$PROJECT_DIR$/src/login.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="369" />
-    <option name="y" value="31" />
-    <option name="width" value="1540" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-218" />
+    <option name="y" value="39" />
+    <option name="width" value="1281" />
     <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -249,12 +286,6 @@
               <item name="Parking_fee" type="b2602c69:ProjectViewProjectNode" />
               <item name="Parking_fee" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Parking_fee" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Parking_fee" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -267,13 +298,14 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Eldho M V\PycharmProjects\Parking_fee\src" />
       <recent name="C:\Users\Eldho M V\PycharmProjects\Parking_fee\src\templates" />
       <recent name="C:\Users\Eldho M V\PycharmProjects\Parking_fee\src\static" />
       <recent name="C:\Users\Eldho M V\PycharmProjects\Parking_fee\src\static\tempasset" />
-      <recent name="C:\Users\Eldho M V\PycharmProjects\Parking_fee\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -288,24 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.server">
-    <configuration name="admin_home" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Parking_fee" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/admin_home.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.new cam">
     <configuration name="login" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -319,6 +334,57 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Parking_fee" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/login.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="new cam" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Parking_fee" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/new cam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="ocr_main " type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Parking_fee" />
+      <option name="SCRIPT_NAME" value="C:\Users\Eldho M V\PycharmProjects\Parking_fee\src\ocr_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="ocr_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Parking_fee" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ocr_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -340,16 +406,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.login" />
-      <item index="1" class="java.lang.String" itemvalue="Python.admin_home" />
-      <item index="2" class="java.lang.String" itemvalue="Python.server" />
+      <item index="1" class="java.lang.String" itemvalue="Python.server" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ocr_main " />
+      <item index="3" class="java.lang.String" itemvalue="Python.new cam" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ocr_main" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.server" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.new cam" />
         <item index="1" class="java.lang.String" itemvalue="Python.login" />
-        <item index="2" class="java.lang.String" itemvalue="Python.admin_home" />
+        <item index="2" class="java.lang.String" itemvalue="Python.server" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ocr_main " />
+        <item index="4" class="java.lang.String" itemvalue="Python.ocr_main" />
       </list>
     </recent_temporary>
   </component>
@@ -389,17 +459,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22287862" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06874329" sideWeight="0.4891775" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23755656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3653846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12137487" sideWeight="0.51082253" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -419,14 +490,14 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30882353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35180995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15896885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15145005" sideWeight="0.4947644" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.047511313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18635875" sideWeight="0.5052356" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -436,100 +507,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="scrum3" />
-    <option name="LAST_COMMIT_MESSAGE" value="scrum3" />
+    <MESSAGE value="scrum4" />
+    <option name="LAST_COMMIT_MESSAGE" value="scrum4" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/server.py</url>
+          <line>114</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/new cam.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/new cam.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/new cam.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dbconnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="73" lean-forward="false" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/dashboard.html" />
-    <entry file="file://$PROJECT_DIR$/src/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/login.html" />
-    <entry file="file://$PROJECT_DIR$/src/dbconnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/login.html" />
-    <entry file="file://$PROJECT_DIR$/src/dbconnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/log.py" />
     <entry file="file://$PROJECT_DIR$/src/admin_home.py" />
     <entry file="file://$PROJECT_DIR$/src/static/tempasset/assets/js/core/popper.min.js" />
@@ -580,69 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/lati longi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/parkareaadd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbconnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/mdash.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588">
-          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/parkareaupdate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2940">
-          <caret line="140" column="26" lean-forward="true" selection-start-line="140" selection-start-column="26" selection-end-line="140" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/addslot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/updateslot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1302">
-          <caret line="62" column="41" lean-forward="false" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/admin_home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -650,99 +595,257 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/viewslot.html">
+    <entry file="file://$PROJECT_DIR$/src/templates/indexadmin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="21">
+          <caret line="166" column="28" lean-forward="false" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/parkareaupdate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/addstaff.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
+        <state relative-caret-position="1288">
           <caret line="72" column="64" lean-forward="false" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/dash.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="46" column="36" lean-forward="false" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/updatestaff.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="47" column="77" lean-forward="false" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
+        <state relative-caret-position="219">
+          <caret line="23" column="131" lean-forward="false" selection-start-line="23" selection-start-column="131" selection-end-line="23" selection-end-column="131" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/viewstaff.html">
+    <entry file="file://$PROJECT_DIR$/src/templates/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="163" column="7" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="1092">
+          <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/view_pmanager.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="137" column="25" lean-forward="false" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="2478">
+          <caret line="118" column="125" lean-forward="false" selection-start-line="118" selection-start-column="125" selection-end-line="118" selection-end-column="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/addmanager.html">
+    <entry file="file://$PROJECT_DIR$/src/templates/viewstaff.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="92" column="24" lean-forward="true" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="3423">
+          <caret line="163" column="19" lean-forward="false" selection-start-line="163" selection-start-column="19" selection-end-line="163" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/indexmanager.html">
+    <entry file="file://$PROJECT_DIR$/src/templates/addslot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2037">
-          <caret line="166" column="28" lean-forward="false" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="567">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="31" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/managerupdate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="89" column="12" lean-forward="true" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+        <state relative-caret-position="609">
+          <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/updateslot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbconnection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/indexadmin.html">
+    <entry file="file://$PROJECT_DIR$/src/webserver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="166" column="28" lean-forward="false" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
+        <state relative-caret-position="-340">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/Jilson.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/kmct.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocr_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/num.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/1989309710/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="3631" column="11" lean-forward="false" selection-start-line="3631" selection-start-column="8" selection-end-line="3631" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocr_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/bill.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/booking.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/temp.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/dash.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-294">
+          <caret line="46" column="36" lean-forward="false" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/sdash.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/lati longi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/mdash.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/indexmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2709">
+          <caret line="129" column="16" lean-forward="false" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/viewslot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/login.py">
+    <entry file="file://$PROJECT_DIR$/src/new cam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2756">
-          <caret line="314" column="0" lean-forward="true" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+        <state relative-caret-position="1239">
+          <caret line="69" column="76" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="76" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/viewparking.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/parkareaadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/viewreserve.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="30" />
+        <state relative-caret-position="1260">
+          <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/addmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4557">
+          <caret line="220" column="30" lean-forward="false" selection-start-line="220" selection-start-column="30" selection-end-line="220" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/indexstaff.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="143" column="30" lean-forward="false" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
           <folding />
         </state>
       </provider>
