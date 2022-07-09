@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0a0a67-50c1-40f3-91a2-762b0615355f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/num.jpg" afterPath="$PROJECT_DIR$/src/num.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.py" afterPath="$PROJECT_DIR$/src/login.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/new cam.py" afterPath="$PROJECT_DIR$/src/new cam.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server.py" afterPath="$PROJECT_DIR$/src/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/dash.html" afterPath="$PROJECT_DIR$/src/templates/dash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/indexadmin.html" afterPath="$PROJECT_DIR$/src/templates/indexadmin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/indexmanager.html" afterPath="$PROJECT_DIR$/src/templates/indexmanager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/mdash.html" afterPath="$PROJECT_DIR$/src/templates/mdash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/viewparking.html" afterPath="$PROJECT_DIR$/src/templates/viewparking.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/viewreserve.html" afterPath="$PROJECT_DIR$/src/templates/viewreserve.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -458,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657122603336</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sprint 5">
+      <created>1657363050435</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657363050435</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -511,7 +508,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="scrum3" />
     <MESSAGE value="scrum4" />
-    <option name="LAST_COMMIT_MESSAGE" value="scrum4" />
+    <MESSAGE value="sprint 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
