@@ -37,13 +37,80 @@ def logout():
 @app.route('/admin_home')
 @login_required
 def admin_home():
-    return render_template('dash.html')
+
+    qry="select count(*),sum(amount) from bill where date=curdate()"
+    res=selectall(qry)
+
+    tc=res[0][0]
+    tamt=0
+    try:
+        tamt=int(res[0][1])
+    except:
+        pass
+
+    qry="select count(*),sum(amount) from bill where month(date)=month(curdate())"
+    res=selectall(qry)
+
+    mc=res[0][0]
+    mamt=0
+    try:
+        mamt=int(res[0][1])
+    except:
+        pass
+    row=[tc,tamt,mc,mamt]
+    qry="select day(date),sum(amount) from bill where month(date)=month(curdate()) group by date"
+    res=selectall(qry)
+    x=[]
+    y=[]
+
+    max=0
+    for i in res:
+        x.append(int(i[0]))
+        y.append(int(i[1]))
+        if int(i[1])>max:
+            max=int(i[1])
+    max=max+10
+    return render_template('dash.html',v=row,x=x,y=y,m=max)
 
 
 @app.route('/manager_home')
 @login_required
 def manager_home():
-    return render_template('mdash.html')
+    qry = "select count(*),sum(amount) from bill where date=curdate() and  vid in(select id from vehicle where sid in(select sid from slot where aid=%s))"
+    res = selectall2(qry,session['lid'])
+
+    tc = res[0][0]
+    tamt = 0
+    try:
+        tamt = int(res[0][1])
+    except:
+        pass
+
+    qry = "select count(*),sum(amount) from bill where month(date)=month(curdate())  and  vid in(select id from vehicle where sid in(select sid from slot where aid=%s))"
+    res = selectall2(qry,session['lid'])
+
+    mc = res[0][0]
+    mamt = 0
+    try:
+        mamt = int(res[0][1])
+    except:
+        pass
+    row = [tc, tamt, mc, mamt]
+    qry = "select day(date),sum(amount) from bill where month(date)=month(curdate())  and  vid in(select id from vehicle where sid in(select sid from slot where aid=%s)) group by date"
+    res = selectall2(qry,session['lid'])
+    x = []
+    y = []
+
+    max = 0
+    for i in res:
+        x.append(int(i[0]))
+        y.append(int(i[1]))
+        if int(i[1]) > max:
+            max = int(i[1])
+    max = max + 10
+
+
+    return render_template('mdash.html', v=row, x=x, y=y, m=max)
 
 @app.route('/staff_home')
 def staff_home():
@@ -306,11 +373,14 @@ def staffaddcode():
     photo.save(os.path.join('static', pic))
     tmp = str(dob1).split('-')
     dob = tmp[2] + "-" + tmp[1] + "-" + tmp[0]
-    qry = " insert into staff values(null,%s,%s,%s,%s,%s,%s,%s,'Active')"
+    qry=" select aid from manager where pm_id=%s"
+    res=selectone(qry,session['lid'])
+
+    qry = " insert into staff values(null,%s,%s,%s,%s,%s,%s,%s,%s)"
     qry2 = "insert into login values(null,%s,%s,'staff')"
     val2 = (mail, dob)
     iud(qry2, val2)
-    val = (name, gender, add, dob1, mail, ph, pic)
+    val = (name, gender, add, dob1, mail, ph, pic,res[0])
     iud(qry, val)
     return ''''<script>alert("successfully added");
         window.location='/viewstaff'</script>'''
@@ -329,8 +399,8 @@ def upstaffcode():
     status = request.form['status']
 
 
-    qry2 = "UPDATE `staff` SET `name`=%s,`address`=%s,`gender`=%s,`dob`=%s,`mail`=%s,`phone`=%s,`status`=%s  WHERE `sid`=%s"
-    val2 = (name, gender, add, dob1, mail, ph, status, session['mid'])
+    qry2 = "UPDATE `staff` SET `name`=%s,`address`=%s,`gender`=%s,`dob`=%s,`mail`=%s,`phone`=%s  WHERE `sid`=%s"
+    val2 = (name, gender, add, dob1, mail, ph, session['mid'])
     iud(qry2, val2)
     return ''''<script>alert("successfully updated");
         window.location='/viewstaff'</script>'''
@@ -342,16 +412,103 @@ def viewparea():
     qry = "select * from addarea "
     res = selectall(qry)
     return render_template('view.html', val=res)
+
+@app.route('/admin_feedback', methods=['post', 'get'])
+@login_required
+def admin_feedback():
+    qry = "select feedback.*,addarea.arname,registration.name from addarea join feedback on feedback.pid=addarea.aid join registration on registration.lid=feedback.lid order by feedback.id desc"
+    res = selectall(qry)
+
+    return render_template('admin_feedback.html', val=res)
+
+@app.route('/manager_complaint', methods=['post', 'get'])
+@login_required
+def manager_complaint():
+    qry = "select complaint.*,addarea.arname,registration.name from addarea join complaint on complaint.pid=addarea.aid join registration on registration.lid=complaint.lid where addarea.aid=%s and reply='pending' order by complaint.id desc"
+    res = selectall2(qry,session['lid'])
+    f="0"
+    if len(res)>0:
+        f="1"
+    return render_template('manager_complaint.html', val=res,f=f)
+
+
+@app.route('/reply', methods=['post', 'get'])
+@login_required
+def reply():
+    id=request.args.get("id")
+    session['cid']=id
+    return render_template('complaint_reply.html')
+
+
+@app.route('/addreply', methods=['post', 'get'])
+@login_required
+def addreply():
+
+    id=session['cid']
+    repl=request.form['textfield']
+    qry="update complaint set reply=%s where id=%s"
+    val=(repl,id)
+    iud(qry,val)
+    return redirect("/manager_complaint")
+
+
+@app.route('/admin_report', methods=['post', 'get'])
+@login_required
+def admin_report():
+    qry = "select feedback.*,addarea.arname,registration.name from addarea join feedback on feedback.pid=addarea.aid join registration on registration.lid=feedback.lid order by feedback.id desc"
+    res = selectall(qry)
+    return render_template('admin_feedback.html', val=res)
 @app.route('/viewreser', methods=['post', 'get'])
 def viewreser():
-    qry = "SELECT *,DATE_FORMAT(booking.entime,'%d-%m-%Y %H:%i:%S') AS DO ,DATE_FORMAT(booking.extime,'%d-%m-%Y %H:%i:%S') AS DOE FROM booking  ORDER BY entime"
+    qry = "SELECT *,DATE_FORMAT(booking.entime,'%d-%m-%Y %H:%i:%S') AS DO ,DATE_FORMAT(booking.extime,'%d-%m-%Y %H:%i:%S') AS DOE FROM booking where  date(entime)=curdate()  ORDER BY entime"
     res = selectall(qry)
-    return render_template('viewreserve.html', val=res)
+    return render_template('viewreserve.html', val=res,d="")
+
+@app.route('/viewreser1', methods=['post', 'get'])
+def viewreser1():
+    d=request.form['d']
+
+    qry = "SELECT *,DATE_FORMAT(booking.entime,'%d-%m-%Y %H:%i:%S') AS DO ,DATE_FORMAT(booking.extime,'%d-%m-%Y %H:%i:%S') AS DOE FROM booking where  date(entime)='"+d+"'  ORDER BY entime"
+    res = selectall(qry)
+    return render_template('viewreserve.html', val=res,d=d)
+
 @app.route('/viewpark', methods=['post', 'get'])
 def viewpark():
-    qry = "select *,DATE_FORMAT(vehicle.entry,'%d-%m-%Y %H:%i:%S') as do from vehicle order by entry"
+    qry=" select vehicle.*,slot.slot_no,slot.floor,slot.status,booking.status from vehicle left join slot on vehicle.sid=slot.sid left join booking on booking.bookid=vehicle.bookid where vehicle.status!='finished' and vehicle.aid in(select status from staff where sid="+str(session['lid'])+")"
+    # qry = "select *,DATE_FORMAT(vehicle.entry,'%d-%m-%Y %H:%i:%S') as do from vehicle order by entry"
     res = selectall(qry)
+    print(qry)
     return render_template('viewparking.html', val=res)
+
+
+@app.route('/alocatesloat', methods=['post', 'get'])
+def alocatesloat():
+    id=request.args.get("id")
+    session['vid']=id
+
+    qry="select * from slot where status='free' and type='NR' and  aid in(select status from staff where sid="+str(session['lid'])+")"
+    res=selectall(qry)
+    return render_template('viewparking1.html', val=res)
+
+
+@app.route('/alocate_sloat1', methods=['post', 'get'])
+def alocate_sloat1():
+    s=request.form['s']
+    id=session['vid']
+    print(s,)
+
+    qry="update vehicle set sid=%s where id=%s"
+    val=(s,id)
+    iud(qry,val)
+
+    qry="update slot set status='allocated' where sid=%s"
+    iud(qry,s)
+
+    qry="update booking set status='entered',sid=%s where bookid in(select bookid from vehicle where id=%s)"
+    val=(s,id)
+    iud(qry,val)
+
+    return redirect("/viewpark")
 
 
 @app.route('/viewmanager', methods=['post', 'get'])
@@ -365,7 +522,10 @@ def viewmanager():
 @app.route('/viewstaff', methods=['post', 'get'])
 @login_required
 def viewstaff():
-    qry = "select *,DATE_FORMAT(dob,'%d-%m-%Y') as do from staff order by staff.status"
+    qry = " select aid from manager where pm_id=%s"
+    res = selectone(qry, session['lid'])
+
+    qry = "select *,DATE_FORMAT(dob,'%d-%m-%Y') as do from staff where staff.status="+str(res[0])
     res = selectall(qry)
     return render_template('viewstaff.html', val=res)
 

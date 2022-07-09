@@ -1,5 +1,6 @@
 {% extends 'indexadmin.html' %}
 {% block body %}
+<body>
  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -28,7 +29,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>0</h3>
+                <h3>{{v[0]}}</h3>
 
                 <p>Today's Users </p>
               </div>
@@ -42,7 +43,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>0</h3>
+                <h3>{{v[2]}}</h3>
 
                 <p>Last Month Users </p>
               </div>
@@ -57,7 +58,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>0</h3>
+                <h3>{{v[1]}}</h3>
 
                 <p>Today's Money </p>
               </div>
@@ -72,7 +73,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>0</h3>
+                <h3>{{v[3]}}</h3>
 
                 <p>Last Month Money</p>
               </div>
@@ -87,10 +88,38 @@
         <marquee>REPORTS</marquee>
         <!-- /.row -->
         <!-- Main row -->
-
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+
   </div>
+
+
+<script>
+var xValues = {{x}};
+var yValues = {{y}};
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:{{m}}}}],
+    }
+  }
+});
+</script>
+</body>
 {% endblock %}

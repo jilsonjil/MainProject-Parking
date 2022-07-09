@@ -11,22 +11,21 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th style="width: 16px"> ID</th>
+
                          <th>VEHICLE NUMBER</th>
                       <th>ENTRY DATE AND TIME</th>
-                      <th>EXIT DATE AND TIME</th>
-
-
-
+                      <th>Status</th>
+                      <th>Sloat Floor</th>
                     </tr>
                   </thead>
                   <tbody>
                     {% for i in val %}
     <tr>
-      <td>{{i[0]}}</td>
       <td>{{i[5]}}</td>
-      <td>&nbsp;{{i[7]}}</td>
-      <td>&nbsp;</td>
+      <td>{{i[2]}}</td>
+      <td>&nbsp;{% if i[1]|string == '0' %} Not booked {% else %} Booked {% endif %}</td>
+        <td>{%if i[8]|string =='None'%}<a href="alocatesloat?id={{i[0]}}">Allocate sloat</a> {% else %}{{i[8]}} == {{i[9]}} {% if i[11]=="complicated" %} <a href="alocatesloat?id={{i[0]}}">Reallocate sloat</a>  {% endif %} {% endif %}</td>
+
     </tr>
 {% endfor %}
 

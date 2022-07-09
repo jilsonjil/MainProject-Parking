@@ -59,8 +59,12 @@ def booking():
     print("f==",floor)
 
     val=(uid,endate,exdate,sid,vid,slot,uname)
-    iud(qry,val)
-    return jsonify({"task": "success"})
+    bid=iud(qry,val)
+    qry="select datediff(extime,entime) from booking where bookid=%s"
+    res=selectone(qry,bid)
+    day=int(res[0])+1
+    amount=day*15
+    return jsonify({"task": "success","bid":bid,"amt":amount})
 
 @app.route('/searchslot',methods=['post'])
 def searchslot():
@@ -96,6 +100,76 @@ def viewarea():
     qry="SELECT *FROM addarea"
     res = androidselectallnew(qry)
     return jsonify(res)
+
+@app.route('/afeedback',methods=['post'])
+def afeedback():
+
+
+    feed=request.form['feed']
+    bid=request.form['bid']
+    lid=request.form['lid']
+    qry="select aid from slot where sid in(select sid from booking where bookid=%s)"
+    res=selectone(qry,bid)
+    qry="insert into feedback values(null,%s,%s,%s,curdate())"
+    val=(res[0],lid,feed)
+    iud(qry,val)
+
+    return jsonify({"task":"success"})
+@app.route('/acomplaint',methods=['post'])
+def acomplaint():
+
+
+    feed=request.form['comp']
+    bid=request.form['bid']
+    lid=request.form['lid']
+    qry="select aid from slot where sid in(select sid from booking where bookid=%s)"
+    res=selectone(qry,bid)
+    qry="insert into complaint values(null,%s,%s,%s,curdate(),'pending')"
+    val=(res[0],lid,feed)
+    iud(qry,val)
+
+    return jsonify({"task":"success"})
+
+@app.route('/Payment',methods=['post'])
+def Payment():
+
+    bid=request.form['bid']
+    amt=request.form['amt']
+    cnum=request.form['cnum']
+    exdate=request.form['exdate']
+    cvv=request.form['cvv']
+
+    qry="insert into payment values(null,%s,%s,%s,%s,%s,curdate(),'completed')"
+    val=(bid,amt,cnum,exdate,cvv)
+    iud(qry,val)
+    return jsonify({"task": "success"})
+
+
+
+@app.route('/viewprofile',methods=['post'])
+def viewprofile():
+    lid=request.form['lid']
+    qry="select * from registration where lid=%s"
+    res=androidselectall(qry,lid)
+    print(res,lid)
+    return jsonify(res[0])
+
+@app.route('/update',methods=['post'])
+def update():
+
+
+    username=request.form['username']
+    mail=request.form['mail']
+    vno=request.form['vno']
+    phno=request.form['phno']
+    lid=request.form['lid']
+
+    qry="update registration set name=%s,email=%s,vno=%s,phone=%s where lid=%s"
+    val=(username,mail,vno,phno,lid)
+    iud(qry,val)
+    return jsonify({"task": "success"})
+
+
 @app.route('/viewslot',methods=['post'])
 def viewslot():
     aid=request.form['aid']
@@ -143,7 +217,14 @@ def viewareas():
     return jsonify(ress)
 
 
+@app.route('/viewbookings',methods=['post'])
+def viewbookings():
+    aid=request.form['lid']
 
+    qry = "select booking.bookid,booking.entime,booking.extime,booking.slot,slot.floor from booking,slot where booking.sid=slot.sid and booking.uid='"+aid+"'"
+    res = androidselectallnew(qry)
+
+    return jsonify(data=res,status="ok")
 
 
 
